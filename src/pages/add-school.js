@@ -31,9 +31,9 @@ export function AddSchool(props) {
     e.preventDefault();
     addDocument(appConfig.schoolDatabaseName, formData)
       .then((res) => {
-        console.log("data added successfully");
+        console.log("data added successfully: document id : ", res.id);
         resetForm();
-        schoolActions.addSchools(formData);
+        schoolActions.addSchools({...formData, id: res.id});
       })
       .catch((err) => console.log(err));
     console.log(formData);
