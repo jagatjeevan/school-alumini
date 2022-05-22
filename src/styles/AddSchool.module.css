@@ -1,0 +1,7 @@
+.add_school_form {
+  display: grid;
+  grid-template-columns: 350px auto;
+  grid-gap: 20px;
+  width: 80%;
+  margin: 20px auto;
+}
