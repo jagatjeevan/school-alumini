@@ -27,9 +27,12 @@ const reducer = (state, action) => {
       };
 
     case "deleteSchool":
+      const updatedSchool = state.schools.filter(
+        (item) => item.id !== action.payload
+      );
       return {
         ...state,
-        schools: state.schools.filter((item) => item.id !== action.payload),
+        schools: updatedSchool,
       };
 
     case "resetSchoolSelection":
