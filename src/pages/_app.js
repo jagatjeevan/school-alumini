@@ -1,6 +1,6 @@
 import Header from '../components/Header';
 import { Provider as SchoolProvider } from '../context/schoolNameContext';
-import { initFirebase } from '../firebase/firebaseService';
+import { initFirebase } from '../firebase/fireStoreService';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps, firebaseConfig }) {

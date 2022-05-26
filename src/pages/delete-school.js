@@ -1,6 +1,6 @@
 import appConfig from "../config/appConfig";
 import { withSchools } from "../context/schoolNameContext";
-import { deleteDocument } from "../firebase/firebaseService";
+import { deleteDocument } from "../firebase/fireStoreService";
 import style from "../styles/DeleteSchool.module.css";
 
 function DeleteSchool(props) {

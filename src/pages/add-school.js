@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import appConfig from "../config/appConfig";
 import { withSchools } from "../context/schoolNameContext";
-import { addDocument } from "../firebase/firebaseService";
+import { addDocument } from "../firebase/fireStoreService";
 import styles from "../styles/AddSchool.module.css";
 
 export function AddSchool(props) {

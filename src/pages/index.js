@@ -1,7 +1,7 @@
 import Link from "next/link";
 import appConfig from "../config/appConfig";
 import { withSchools } from "../context/schoolNameContext";
-import { getDocumentsOf } from "../firebase/firebaseService";
+import { getDocumentsOf } from "../firebase/fireStoreService";
 import styles from "../styles/Home.module.css";
 
 const AddSchoolButton = () => (
